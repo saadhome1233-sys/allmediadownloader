@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-In-One Media Downloader | Premium Video Downloader</title>
+    <meta name="description" content="Download videos from YouTube, TikTok, and Instagram easily with our premium All-In-One Media Downloader.">
+    <link rel="canonical" href="https://xrtjiglkpikzypynhvpj.supabase.co">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xrtjiglkpikzypynhvpj.supabase.co">
+    <meta property="og:title" content="All-In-One Media Downloader | Premium Video Downloader">
+    <meta property="og:description" content="Download videos from YouTube, TikTok, and Instagram easily with our premium All-In-One Media Downloader.">
+    <meta property="og:image" content="https://xrtjiglkpikzypynhvpj.supabase.co/storage/v1/object/public/ico/apple-touch-icon.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="All-In-One Media Downloader | Premium Video Downloader">
+    <meta name="twitter:description" content="Download videos from YouTube, TikTok, and Instagram easily with our premium All-In-One Media Downloader.">
+    <meta name="twitter:image" content="https://xrtjiglkpikzypynhvpj.supabase.co/storage/v1/object/public/ico/apple-touch-icon.png">
+    <meta name="twitter:url" content="https://xrtjiglkpikzypynhvpj.supabase.co">
+
+    <!-- Favicons -->
+    <link rel="icon" href="https://xrtjiglkpikzypynhvpj.supabase.co/storage/v1/object/public/ico/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://xrtjiglkpikzypynhvpj.supabase.co/storage/v1/object/public/ico/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://xrtjiglkpikzypynhvpj.supabase.co/storage/v1/object/public/ico/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div class="background-blob"></div>
+    <div class="background-blob-2"></div>
+
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+            <span>Media<span>Downloader</span></span>
+        </div>
+        <div class="theme-toggle" id="theme-toggle">
+            <i class="fa-solid fa-moon"></i>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>All In One <span class="gradient-text">Media Downloader</span></h1>
+            <p>Download your favorite videos from YouTube, TikTok, and Instagram in high quality instantly.</p>
+            
+            <div class="search-container">
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-link"></i>
+                    <input type="text" id="url-input" placeholder="Paste YouTube, TikTok, or Instagram link here...">
+                </div>
+                <button id="download-btn">
+                    <span>Download Media</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+            
+            <div class="platform-icons">
+                <div class="platform youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="platform tiktok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <div class="platform instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="result-container" class="result-container hidden">
+            <div class="loader-container" id="loader">
+                <div class="spinner"></div>
+                <p>Fetching media data...</p>
+            </div>
+
+            <div id="error-message" class="error-card hidden">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <div class="error-text">
+                    <h3>Error Occurred</h3>
+                    <p id="error-detail"></p>
+                </div>
+            </div>
+
+            <div id="media-card" class="media-card hidden">
+                <div class="platform-badge" id="platform-badge">
+                    <i id="platform-icon"></i>
+                    <span id="platform-name"></span>
+                </div>
+                <div class="media-content">
+                    <div class="media-preview" id="media-preview-container">
+                        <!-- Image or Video will be injected here -->
+                    </div>
+                    <div class="media-info">
+                        <h2 id="media-title">Video Title Goes Here</h2>
+                        <div id="download-options" class="download-options">
+                            <!-- Download buttons will be injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Fast Processing</h3>
+                <p>Our servers process your requests instantly for the fastest download experience.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Safe & Secure</h3>
+                <p>We don't store your data. Your downloads are private and secure.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-display"></i>
+                <h3>High Quality</h3>
+                <p>Get the best available quality for all your video downloads.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Media Downloader. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

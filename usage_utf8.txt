@@ -1,0 +1,41 @@
+﻿node.exe : [13936] Using 
+automatically selected 
+callback port: 28912
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo          : 
+    NotSpecified: ([13936] U  
+  sing a...ack port: 28912:   
+ String) [], RemoteExcepti    
+on
+    + FullyQualifiedErrorId : 
+    NativeCommandError
+ 
+[13936] Discovering OAuth 
+server configuration...
+[13936] [13936] Connecting to 
+remote server: https://mcp.rap
+idapi.com?x-api-host=youtube-m
+p41.p.rapidapi.com&x-api-key=e
+2ed7770d6msh0dd60003e614cd4p1c
+b3e1jsna03a10c43b37
+[13936] Using transport 
+strategy: http-first
+[13936] Connected to remote 
+server using 
+StreamableHTTPClientTransport
+[13936] Local STDIO server 
+running
+[13936] Proxy established 
+successfully between local 
+STDIO and remote 
+StreamableHTTPClientTransport
+[13936] Press Ctrl+C to exit
+[13936] 
+Shutting down...
