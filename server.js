@@ -10,7 +10,12 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Explicit route for homepage
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 // RapidAPI Credentials (from environment variables)
 const API_KEY = process.env.RAPID_API_KEY || 'e2ed7770d6msh0dd60003e614cd4p1cb3e1jsna03a10c43b37';
