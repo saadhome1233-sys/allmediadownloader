@@ -12,8 +12,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
 
-// RapidAPI Credentials (from provided configuration)
-const API_KEY = 'e2ed7770d6msh0dd60003e614cd4p1cb3e1jsna03a10c43b37';
+// RapidAPI Credentials (from environment variables)
+const API_KEY = process.env.RAPID_API_KEY || 'e2ed7770d6msh0dd60003e614cd4p1cb3e1jsna03a10c43b37';
 
 /**
  * Detect the platform from the provided URL
@@ -210,6 +210,10 @@ app.get('/progress', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running at http://localhost:${PORT}`);
-});
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`Server is running at http://localhost:${PORT}`);
+    });
+}
+
+module.exports = app;
