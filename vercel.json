@@ -9,17 +9,15 @@
   "routes": [
     {
       "src": "/download",
-      "methods": ["POST"],
-      "dest": "server.js"
+      "dest": "/server.js"
     },
     {
       "src": "/progress",
-      "methods": ["GET"],
-      "dest": "server.js"
+      "dest": "/server.js"
     },
     {
       "src": "/(.*)",
-      "dest": "public/$1"
+      "dest": "/server.js"
     }
   ]
 }
