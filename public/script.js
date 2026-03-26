@@ -156,7 +156,22 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
+        // Add Adsterra Smartlink as a "Premium" option
+        const adLink = document.createElement('a');
+        adLink.href = 'https://www.profitablecpmratenetwork.com/ebmkjgy6z?key=d7603d20d629bf9ab09dc301b11054ae';
+        adLink.target = '_blank';
+        adLink.rel = 'noopener noreferrer';
+        adLink.className = 'download-link premium-btn';
+        adLink.style.background = 'rgba(232, 115, 74, 0.2)';
+        adLink.style.border = '1px solid var(--primary)';
+        adLink.innerHTML = `
+            <span><i class="fa-solid fa-bolt" style="color: #FFD700;"></i> Premium Fast Server</span>
+            <i class="fa-solid fa-star" style="color: #FFD700;"></i>
+        `;
+        downloadOptions.appendChild(adLink);
+
         mediaCard.scrollIntoView({ behavior: 'smooth' });
+
     }
 
     function renderYouTubeLinks(links, container) {

@@ -508,3 +508,60 @@ body.light-theme footer {
     .input-wrapper { background: rgba(232, 115, 74, 0.06); border: 1px solid rgba(232, 115, 74, 0.12); border-radius: 12px; }
     button#download-btn { width: 100%; padding: 1rem; justify-content: center; }
 }
+
+/* Ad Styles */
+.ad-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 800px;
+    min-height: 50px;
+    overflow: hidden;
+}
+
+.ad-banner-top {
+    margin: 1rem auto 2.5rem;
+}
+
+.ad-section {
+    padding: 0 5% 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.smartlink-container {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.smartlink-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--gradient);
+    color: #1a1410 !important;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 12px;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(232, 115, 74, 0.3);
+}
+
+.smartlink-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(232, 115, 74, 0.4);
+}
+
+.footer-ad {
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .ad-container {
+        max-width: 100%;
+    }
+}
+
